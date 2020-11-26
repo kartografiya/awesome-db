@@ -1,6 +1,8 @@
 package db
 
 import (
+	"log"
+	
 	"github.com/kr/pretty"
 )
 
@@ -25,5 +27,6 @@ func (d DB) Size() int {
 }
 
 func (d *DB) String() string {
+	log.Print("ouch")
 	return pretty.Sprint(*d)
 }
