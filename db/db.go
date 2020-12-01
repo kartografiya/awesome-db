@@ -7,9 +7,9 @@ import (
 )
 
 type Video struct {
-	Title string
-	Director string
-	Year int
+	Title string `json:"title"`
+	Director string `json:"director"`
+	Year int `json:"year"`
 }
 
 type DB []Video
@@ -27,6 +27,5 @@ func (d DB) Size() int {
 }
 
 func (d *DB) String() string {
-	log.Print("ouch")
 	return pretty.Sprint(*d)
 }
