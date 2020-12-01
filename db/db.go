@@ -1,8 +1,6 @@
 package db
 
 import (
-	"log"
-	
 	"github.com/kr/pretty"
 )
 
